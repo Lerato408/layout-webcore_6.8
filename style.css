@@ -1,10 +1,20 @@
 @font-face {
-    font-family: ;
-    src: url();
+    font-family:Roboto, sans-serif ;
+    src: url(./fonts/Roboto-Medium.ttf) format("truetype");
+    font-weight:400 ;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: roboto,sans-serif;
+    src: url(./fonts/Roboto-Regular.ttf) format("truetype");
+    font-weight: 200;
+    font-style: normal;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
+    font-weight: 200;
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
@@ -104,8 +114,16 @@ body {
   transform: translateX(0);
 }
 
+.left__border {
+     border-left: 4px solid #48fef5;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right: 0px;  
+}
+
 .menu__item:hover {
-  border-left: cyan 4px solid;
+    border-left: #48fef5 4px solid;
+    color: lightslategray;
     padding-left: 6px;
     border-radius: 4px;
 }
