@@ -1,0 +1,151 @@
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.fixed-aside-menu {
+   position:fixed;
+   left: 0;
+   top: 0;
+   width: 320px;
+   height: 100vh;
+   background-color:#FFFFFF ;
+   color: #000;
+   padding: 20px;
+   box-sizing: border-box;
+   overflow-y: hidden;
+   overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  background: #ffffff; 
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header__menu-btn,
+.header__search {
+    width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #ff4076;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor:pointer;
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu-btn:hover,
+.header__search:hover {
+  background: #e00c4c;
+}
+
+.header__logo {
+    font-size: 10px;
+    font-weight: bold;  
+} 
+
+.header__content {
+  width: 100%;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.header__block1 {
+  display: flex;
+  justify-content: space-between;
+  gap:10px
+}
+
+.header__block2 {
+  display: flex;
+    align-items: center;
+}
+
+
+.main__menu--list {
+   list-style: none; 
+   padding: 0;
+   margin: 0;
+   margin-bottom: 100px;
+}
+
+.menu__item {
+    padding: 10px 0px;
+    font-size: 15px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.menu--open {
+  transform: translateX(0);
+}
+
+.menu__item:hover {
+  border-left: cyan 4px solid;
+    padding-left: 6px;
+    border-radius: 4px;
+}
+
+.menu__item--active {
+    font-weight: bold;
+    color: #000;
+    text-shadow: 1px 1px 2px
+     rgba(0,0,0,0.2);
+}
+
+.footer__container {
+    display: column;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.footer__content-info {
+    display:flex;
+    align-items:center;
+    column-gap: 10px;
+}
+
+.footer__block1 {
+    display: column;
+    align-items: center;
+    
+}
+
+.footer__block2 {
+    display: flex;
+    color:#000;
+    margin-top: 15px 0px;
+}
+
+.language__selector-item:hover  {
+      color: lightslategray;
+      cursor: pointer;
+}
+
+
