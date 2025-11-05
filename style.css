@@ -96,6 +96,7 @@ body {
 
 
 .main__menu--list {
+    
    list-style: none; 
    padding: 0;
    margin: 0;
@@ -113,9 +114,9 @@ body {
 .menu--open {
   transform: translateX(0);
 }
-
+/*ignore for now may use later*/
 .left__border {
-     border-left: 4px solid #48fef5;
+    border-left: 4px solid #48fef5;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     margin-right: 0px;  
@@ -127,6 +128,8 @@ body {
     padding-left: 6px;
     border-radius: 4px;
 }
+
+
 
 .menu__item--active {
     font-weight: bold;
