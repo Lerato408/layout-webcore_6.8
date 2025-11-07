@@ -78,7 +78,7 @@ body {
 } 
 
 .header__content {
-  width: 95%;
+  width: 90%;
   align-content: center;
   justify-content: space-between;
 }
@@ -96,7 +96,6 @@ body {
 
 
 .main__menu--list {
-    
    list-style: none; 
    padding: 0;
    margin: 0;
@@ -111,6 +110,7 @@ body {
     cursor: pointer;
     transition: color 0.3s ease;
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .menu--open {
@@ -118,14 +118,17 @@ body {
 }
 /*ignore for now may use later*/
 .left__border {
-  height: 50vh;
     border-left: 3.5px solid #48fef5;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     margin-right: 0px;  
 }
 
-
+.menu__item--active {
+  font-family: Robot,sans-serif;
+  font-size: 15px;
+  color: gray;
+}
 
 .menu__item:hover {
     font-weight: bold;
@@ -136,19 +139,9 @@ body {
 }
 
 
-.left__border::before {
-    border-left: 4px solid #48fef5;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    margin-right: 0px;
-}
-
-
-
-
 .footer__container {
     display: column;
-    position: relative;
+    position: sticky;
     bottom: 20px;
     left: 20px;
     right: 20px;
@@ -160,10 +153,10 @@ body {
     column-gap: 10px;
 }
 
+
 .footer__block1 {
     display: column;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .footer__info-text a {
